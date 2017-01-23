@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freeze!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Freeze</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row" id="headingText">
+            <div class="col-lg-12">
+                <h1 class="page-header">Freeze!
+                    <small>Select the items you like to collect points!</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+ 
+            <div id="targetDiv">
+                <div class="col-md-4" >
+                    <img id = "targetImg" class="img-responsive" src="" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success nextButton">Like</button>
+                    <button type="button" class="btn btn-danger nextButton">Unlike</button>
+               </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="hide" id="trending-page" >
+
+            <div class="">
+                <div class="alert alert-success">
+                    <strong>You have earned another freeze!</strong> </br>
+                    Number of freezes available : 1
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="page-header">Trending items</h3>
+                        <div class="alert alert-danger">
+                            <span id="timerText"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive portfolio-item" src="./images/graph.png" alt="">
+                    </div>
+
+                   
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/1.jpg" alt="">
+                    </a>
+                    <p><font color = "red">High : 15$</font>   <font color = "green">Low : 12$</font> <font color = "red">Trending : 14.80$ &#8607;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/2.png" alt="">
+                    </a>
+                    <p><font color = "red">High : 19$</font>   <font color = "green">Low : 8$</font> <font color = "green">Trending : 10$ &#8609;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/3.png" alt="">
+                    </a>
+                    <p><font color = "red">High : 30$</font>   <font color = "green">Low : 15$</font> <font color = "green">Trending : 17$ &#8609;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+            <div>
+            <div class="row"></div>
+            <div class="row" style="padding-top:25px;">
+                <div class="col-md-4">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/7.jpg"  alt="">
+                    </a>
+                    <p><font color = "red">High : 13$</font>   <font color = "green">Low : 4$</font> <font color = "green">Trending : 4$ &#8609;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/8.jpeg"  alt="">
+                    </a>
+                    <p><font color = "red">High : 26$</font>   <font color = "green">Low : 10$</font> <font color = "green">Trending : 14$ &#8609;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/6.jpg"  alt="">
+                    </a>
+                    <p><font color = "red">High : 40$</font>   <font color = "green">Low : 22$</font> <font color = "green">Trending : 27.99$ &#8609;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+            </div>
+            <div style="padding-top:25px;"></div>
+            <div class="row"> 
+                <div class="col-md-3">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/4.png"  alt="">
+                    </a>
+                    <p><font color = "red">High : 13$</font>   <font color = "green">Low : 11$</font> <font color = "red">Trending : 12.99$ &#8607;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/5.jpg"  alt="">
+                    </a>
+                    <p><font color = "red">High : 25$</font>   <font color = "green">Low : 21$</font> <font color = "green">Trending : 22.99$ &#8609;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="./images/9.jpg"  alt="">
+                    </a>
+                    <p><font color = "red">High : 15$</font>   <font color = "green">Low : 11$</font> <font color = "red">Trending : 14.20$ &#8607;</font></p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+        <div class="modal fade" id="freezeWindow" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Payment</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>You are buying the item for XX$</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Pay Now and Ship</button>
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Pay and Pick up later</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+            
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var dummyImages = [
+            
+            "https://www.hobbs.co.uk/images/products/0213-6346-3821L00-003/0213-6346-3821L00-003_01_1008_1080.jpg",
+            "./images/1.jpg",
+            "./images/2.png",
+            "./images/3.png",
+            "./images/4.png",
+            "./images/5.jpg",
+            "./images/6.jpg",
+            "./images/7.jpg",
+            "./images/8.jpeg",
+            "./images/9.jpg"
+
+
+        ]
+        $('#targetImg').attr('src', dummyImages[0]);
+        var g_imageCounter = 0;
+        $(".nextButton").click(function(){
+            if(g_imageCounter === (dummyImages.length - 1)){
+                $("#targetDiv").addClass('hide');
+                $("#headingText").addClass('hide');
+                $("#trending-page").removeClass('hide');
+            } else {
+                g_imageCounter++;
+                $('#targetImg').attr('src', dummyImages[g_imageCounter]);      
+            }
+
+        });
+
+        
+        var counter = 1200;
+        var interval = setInterval(function() {
+            counter--;
+            $("#timerText").text("Clock is ticking! Deals ending in : " + secondsTimeSpanToHMS(counter));
+            if (counter == 600) {
+                $("#timerText").text("Deals ended");
+                clearInterval(interval);
+            }
+        }, 1000)
+
+        function secondsTimeSpanToHMS(s) {
+            var h = Math.floor(s/3600); //Get whole hours
+            s -= h*3600;
+            var m = Math.floor(s/60); //Get remaining minutes
+            s -= m*60;
+            return h+":"+(m < 10 ? '0'+m : m)+":"+(s < 10 ? '0'+s : s); //zero padding on minutes and seconds
+        }
+    </script>
+
+</body>
+
+</html>
